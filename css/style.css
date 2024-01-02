@@ -1,7 +1,6 @@
 * {
   font-family: 'Montserrat', sans-serif;
 }
-
 .header-area {
   position: fixed;
   top: 30px;
@@ -10,19 +9,16 @@
   z-index: 100;
   height: 100px;
 }
-
 .header-area .main-nav {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   border-radius: 100px;
   min-height: 92px;
   background: #FFFFFF80;
 }
-
 .header-area .main-nav .logo {
   float: left;
   margin-left: 30px;
 }
-
 .header-area .main-nav .nav {
   float: right;
   margin-left: 0px;
@@ -30,31 +26,23 @@
   position: relative;
   z-index: 999;
 }
-
-.header-area .main-nav .nav li {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header-area .main-nav .nav li:last-child {
-  padding-right: 0px;
-}
-
-.header-area .main-nav .nav li a {
+.header-area .main-nav .nav a {
   display: block;
-  font-weight: 500;
-  font-size: 13px;
-  color: #fff;
-  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  color: #1e1e1e;
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
+  transition: border 0.3s, box-shadow 0.3s;
 }
-
-.header-area .main-nav .nav li a:hover {
+.header-area .main-nav .nav a:hover {
   text-decoration: none;
+  font-weight: bold;
+  border-radius: 100px;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 2px 4px rgba(169, 169, 169, 0.35); /* Efek timbul abu-abu saat dihover */
 }
-
 .header-area .main-nav .menu-trigger {
   cursor: pointer;
   display: block;
@@ -67,7 +55,6 @@
   right: 40px;
   display: none;
 }
-
 .header-area .main-nav .menu-trigger span,
 .header-area .main-nav .menu-trigger span:before,
 .header-area .main-nav .menu-trigger span:after {
@@ -78,7 +65,6 @@
   height: 2px;
   left: 0;
 }
-
 .header-area .main-nav .menu-trigger span:before,
 .header-area .main-nav .menu-trigger span:after {
   background-color: #3B566E;
@@ -89,32 +75,26 @@
   left: 0;
   width: 100%;
 }
-
 .header-area .main-nav .menu-trigger span:before,
 .header-area .main-nav .menu-trigger span:after {
   content: "";
 }
-
 .header-area .main-nav .menu-trigger span {
   top: 16px;
 }
-
 .header-area .main-nav .menu-trigger span:before {
   top: -10px;
   z-index: 10;
 }
-
 .header-area .main-nav .menu-trigger span:after {
   top: 10px;
 }
-
 .header-area .main-nav .menu-trigger.active span,
 .header-area .main-nav .menu-trigger.active span:before,
 .header-area .main-nav .menu-trigger.active span:after {
   background-color: transparent;
   width: 100%;
 }
-
 .header-area .main-nav .menu-trigger.active span:before {
   -moz-transform: translateY(6px) translateX(1px) rotate(45deg);
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
@@ -122,7 +102,6 @@
   transform: translateY(6px) translateX(1px) rotate(45deg);
   background-color: #3B566E;
 }
-
 .header-area .main-nav .menu-trigger.active span:after {
   -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
@@ -130,24 +109,19 @@
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
   background-color: #3B566E;
 }
-
 .header-area.header-sticky {
   min-height: 80px;
 }
-
 .header-area.header-sticky .logo {
-  margin-top: 25px;
+  margin-top: 23px;
 }
-
 .header-area.header-sticky .nav {
-  margin-top: 25px !important;
+  margin-top: 8px;
 }
-
-.header-area.header-sticky .nav li a {
+.header-area.header-sticky .nav a {
   color: #1e1e1e;
 }
-
-.header-area.header-sticky .nav li a.active {
+.header-area.header-sticky .nav a.active {
   text-decoration: none;
 }
 .welcome-area {
@@ -156,7 +130,6 @@
   background-position: right;
   height: 960px;
 }
-
 .welcome-area .header-text {
   position: absolute;
   top: 20%;
