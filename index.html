@@ -10,12 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eaFQSKBpA2A2al1bS6f5FjJFp2IjOwFX6W8eBp4Y7JqIuG1WA5fs3BpSNfDAVqp" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
-
-</head>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head> 
 <body>
     <header class="header-area header-sticky">
         <div class="container">
@@ -27,10 +23,10 @@
                         </a>
                         <div class="nav">
                             <a href="#Home" class="active">Home</a>
-                            <a href="#">Tentang Acara</a>
-                            <a href="#">Galeri</a>
-                            <a href="#">Berita</a>
-                            <a href="#">Registrasi</a>
+                            <a href="#Tentang">Tentang Acara</a>
+                            <a href="#Galeri">Galeri</a>
+                            <a href="#Berita">Berita</a>
+                            <a href="https://event.detik.com/" class="regbutton">Registrasi</a>
                         </div>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -46,136 +42,195 @@
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 text-left">
                         <img src="asset/logo-event.png" alt="" class="img-fluid">
-                        <button class="btn custom-button font-weight-bold">TENTANG ACARA</button>
+                        <button class="btn custom-button font-weight-bold"><a href="#Tentang" class="text-white" style="text-decoration: none;">TENTANG ACARA</a></button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5" id="Tentang">
+      <div class="row mb-4">
+          <div class="col-md-6 mb-4">
+              <div class="card card1">
+                  <img src="asset/map.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                      <h5 class="card-title text-white">10K FUN RUN</h5>
+                      <p class="card-text text-white">Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari dimulai dari Bundaran HI hingga Patung Pemuda Membangun di Senayan lalu kembali lagi ke Bundaran HI!</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 mb-4">
+              <div class="card mb-3 card2">
+                  <div class="card-body">
+                      <h5 class="text-white fw-bold">GRATIS DAN BERHADIAH</h5>
+                      <p class="text-white">Pendaftaran gratis! Ajak keluarga anda dan menangkan hadiah total puluhan juta rupiah doorprize menarik!</p>
+                  </div>
+              </div>
+          <div class="card mb-3 card2">
+            <div class="card-body">
+              <h5 class="text-white fw-bold">50+ TENANT BAZZAR </h5>
+              <p class="text-white">Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman Run 2023 mulai dari F&B hingga fashion</p>
+            </div>
+          </div>
+          <div class="card card2">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="asset/card3.png" class="card-img mt-3" alt="Card 3 Image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="text-white fw-bold">SPECIAL PERFORMANCE</h5>
+                  <p class="text-white">Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan lainnya!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn custom-button font-weight-bold"><a href="https://event.detik.com/" class="text-white" style="text-decoration: none;">DAFTAR SEKARANG</a></button>
+      </div>
+    </div>
+    <div class="supported-container center-vertically mt-4">
+      <div>
+        <h5 class="text-white fw-bold">DIDUKUNG OLEH</h5>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="asset/sponsor1.png" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="asset/sponsor2.png" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="asset/sponsor3.png" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="asset/sponsor4.png" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="asset/sponsor5.png" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="asset/sponsor6.png" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="asset/sponsor7.png" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="asset/sponsor8.png" alt="" srcset=""></div>
+        </div>
+        <div class="autoplay-progress">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  <div class="swiper-container galeri-container" id="Galeri">
+    <h5>GALERI SUDIRMAN RUN 2023</h5>
+    <div class="swiper galeri galeri-thumbs">
+      <div class="swiper-button-next">
+      </div>
+      <div class="swiper-button-prev">
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="asset/slider-1 1.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/slider-1 2.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/slider-1 3.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/slider-1 4.png" />
+        </div>
+      </div>
+    </div>
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper galeri galeri-main">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="asset/slider-1 1.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/slider-1 2.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/slider-1 3.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="asset/slider-1 4.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container berita-container" id="Berita">
+    <h5 class="text-center">ARTIKEL TERKAIT</h5>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="berita">
+          <img src="asset/thumbnail-artikel-1 1.png" alt="Berita 1" class="img-fluid">
+          <h3>Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme Beberkan Prosesnya</h3>
+          <p>Sabtu, 25 Nov 2023 20:00 WIB</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="berita">
+          <img src="asset/thumbnail-artikel-1 2.png" alt="Berita 2" class="img-fluid">
+          <h3>Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023: See Nature</h3>
+          <p>Selasa, 28 Nov 2023 07:42 WIB</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="berita">
+          <img src="asset/thumbnail-artikel-1 3.png" alt="Berita 3" class="img-fluid">
+          <h3>Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023</h3>
+          <p>Minggu, 26 Nov 2023 13:04 WIB</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="berita">
+          <img src="asset/thumbnail-artikel-1 4.png" alt="Berita 1" class="img-fluid">
+          <h3>Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton Maliq & D'essentials</h3>
+          <p>Sabtu, 18 Nov 2023 17:39 WIB</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="berita">
+          <img src="asset/thumbnail-artikel-1 5.png" alt="Berita 2" class="img-fluid">
+          <h3>CT Arsa Charity Fun Run 2023 Bertabur Emas</h3>
+          <p>Kamis, 16 Nov 2023 16:34 WIB</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="berita">
+          <img src="asset/thumbnail-artikel-1 6.png" alt="Berita 3" class="img-fluid">
+          <h3>BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta</h3>
+          <p>Minggu, 12 Nov 2023 11:55 WIB</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button class="btn custom-button font-weight-bold"><a href="https://event.detik.com/" class="text-white" style="text-decoration: none;">LIHAT LEBIH BANYAK</a></button>
+    </div>
+  </div>
+  <div class="footer-area">
+  </div>
+    <footer>
+      <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <!-- Bootstrap Card -->
-                <div class="card">
-                    <!-- Google Maps Embed API -->
-                    <img src="asset/map.png" alt="" srcset="">
-
-                    <!-- Card Body -->
-                    <div class="card-body">
-                        <!-- Card Title -->
-                        <h5 class="card-title">Google Maps</h5>
-                        <!-- Card Subtitle -->
-                        <p class="card-text">This is the subtitle for the Google Maps card.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row mb-3">
-                    <div class="col">
-                        <p>Row 1, Column 1</p>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col">
-                        <p>Row 2, Column 1</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p>Row 3, Column 1</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-        </div>
-    <div class="autoplay-progress"> 
-      <span></span>
-    </div>
-      </div>
-
-      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper galeri galeri-main">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+          <div class="col-12">
+            <img src="asset/logo-footer.png" alt="Logo" class="float-left footer-img">
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-      <div class="swiper galeri galeri-thumbs">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        <div class="row mt-3">
+          <div class="col-md-8">
+            <p>Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu menangkan hadiah utama serta doorprize dengan total puluhan juta rupiah</p>
           </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <div class="col-md-4">
+            <img src="asset/sosial.png" alt="Image" class="float-right sosial-img">
           </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+        </div>
+        <div class="border"></div>
+        <div class="row mt-3">
+          <div class="col-12 text-left">
+            <p>&copy; Copyright @ 2023 detikcom. All right reserved</p>
           </div>
         </div>
       </div>
-
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eaFQSKBpA2A2al1bS6f5FjJFp2IjOwFX6W8eBp4Y7JqIuG1WA5fs3BpSNfDAVqp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>  
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scrollreveal.min.js"></script>

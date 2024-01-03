@@ -43,6 +43,18 @@
   border: 2px solid #FFFFFF;
   box-shadow: 0 2px 4px rgba(169, 169, 169, 0.35); /* Efek timbul abu-abu saat dihover */
 }
+.header-area .main-nav .nav .regbutton {
+  background: linear-gradient(to left, #59FFB9, #326CFF);
+  padding: 10px 20px; /* Sesuaikan ukuran padding sesuai kebutuhan */
+  color: #ffffff; /* Sesuaikan warna teks sesuai kebutuhan */
+  text-decoration: none; /* Menghilangkan garis bawah default pada tautan */
+  border-radius: 50px; /* Menambahkan sudut melengkung pada elemen */
+  display: inline-block; /* Mengubah elemen menjadi blok agar dapat menentukan lebar dan tinggi */
+}
+.header-area .main-nav .nav .regbutton:hover {
+  background: linear-gradient(to right, #59FFB9, #326CFF);
+}
+
 .header-area .main-nav .menu-trigger {
   cursor: pointer;
   display: block;
@@ -149,11 +161,43 @@
   box-shadow: 0 18px 40px rgba(255, 211, 103, 0.5);
   border-radius: 100px;
 }
+.card {
+  border-style: none;
+  border-radius: 32px;
+}
+.card-body {
+  padding: 18px;
+}
+.card1 {
+  padding: 32px;
+  background: linear-gradient(to left, #59FFB9, #326CFF);
+}
+.card2 {
+  padding: 18px;
+  background: linear-gradient(to left, #59FFB9, #326CFF);
+}
+.card1:hover {
+  background: linear-gradient(to right, #59FFB9, #326CFF);
+}
+.card2:hover {
+  background: linear-gradient(to right, #59FFB9, #326CFF);
+}
+.text-white {
+  color: #ffffff;
+}
+.supported-container {
+  background: linear-gradient(to left, #59FFB9, #326CFF);
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+.supported-container h5 {
+  color: #ffffff;
+}
 .swiper {
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -162,69 +206,79 @@
   justify-content: center;
   align-items: center;
 }
-
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
-
-.galeri {
-  width: 100%;
-  height: 100%;
-}
-
-.galeri .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+.galeri-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 20px; 
+  margin: 150px; 
+  flex-direction: column;
 }
-
-.galeri .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .galeri {
   width: 100%;
   height: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
 }
-
 .galeri .swiper-slide {
   background-size: cover;
   background-position: center;
 }
-
-.galeri-main{
+.galeri-thumbs {
   height: 80%;
   width: 100%;
 }
-.galeri-thumbs {
+.galeri-main {
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0;
 }
-.galeri-thumbs .swiper-slide {
+.galeri-main .swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.4;
 }
-
-.galeri-thumbs .swiper-slide-thumb-active {
+.galeri-main .swiper-slide-thumb-active {
   opacity: 1;
 }
-
 .galeri .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.berita-container {
+  margin-top: 20px;
+}
+.berita {
+  padding: 15px;
+  text-align: center;
+}
+.berita h3 {
+  margin-bottom: 10px;
+  max-height: 3em; /* Maksimal 2 baris */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.footer-area {
+  background: url(../asset/footer.png) center/cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 548px;
+}
+footer {
+  background-color: #28A997;
+  padding: 20px 0;
+  color: #FFFFFF;
+  ;
+}
+.footer-img {
+  max-width: 30%;
+  height: auto;
 }

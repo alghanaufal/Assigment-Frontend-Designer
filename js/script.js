@@ -1,21 +1,13 @@
 (function ($) {
     "use strict";
-
-    // Window Resize Mobile Menu Fix
     mobileNav();
-
-    // Scroll animation init
     window.sr = new scrollReveal();
-
-    // Menu Dropdown Toggle
     if ($('.menu-trigger').length) {
         $(".menu-trigger").on('click', function () {
             $(this).toggleClass('active');
             $('.header-area .nav').slideToggle(200);
         });
     }
-
-    // Menu elevator animation
     $('a[href*=\\#]:not([href=\\#])').on('click', function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -33,20 +25,15 @@
             }
         }
     });
-
     $(document).ready(function () {
         $(document).on("scroll", onScroll);
-
-        //smoothscroll
         $('a[href^="#"]').on('click', function (e) {
             e.preventDefault();
             $(document).off("scroll");
-
             $('a').each(function () {
                 $(this).removeClass('active');
             })
             $(this).addClass('active');
-
             var target = this.hash,
                 menu = target;
             var target = $(this.hash);
@@ -58,7 +45,6 @@
             });
         });
     });
-
     function onScroll(event) {
         var scrollPos = $(document).scrollTop();
         $('.nav a').each(function () {
@@ -72,18 +58,12 @@
             }
         });
     }
-
-    // Window Resize Mobile Menu Fix
     $(window).on('resize', function () {
         mobileNav();
     });
-    // Window Resize Mobile Menu Fix
 	$(window).on('resize', function() {
 		mobileNav();
 	});
-
-
-	// Window Resize Mobile Menu Fix
 	function mobileNav() {
 		var width = $(window).width();
 		$('.submenu').on('click', function() {
@@ -93,10 +73,7 @@
 			}
 		});
 	}
-
-
 })(window.jQuery);
-
 const progressContent = document.querySelector(".autoplay-progress span");
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -137,38 +114,21 @@ var swiper = new Swiper(".mySwiper", {
         swiper: swiper,
     },
 });
-
-var swiperMain = new Swiper(".galeri-main", {
+var swiper = new Swiper(".galeri-main", {
     loop: true,
-    spaceBetween: 10,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-        swiper: swiperThumbs,
-    },
-});
-
-var swiperThumbs = new Swiper(".galeri-thumbs", {
-    loop: true,  // Menambahkan opsi loop pada swiper-thumbs
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
-    watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
 });
-
-swiperMain.on('slideChange', function () {
-    var activeIndex = swiperMain.realIndex;
-    swiperThumbs.slideTo(activeIndex, 300, false);
-
-    swiperThumbs.slides.forEach(function (thumb, index) {
-        var opacity = index === activeIndex ? 1 : 0.4;
-        thumb.style.opacity = opacity;
-    });
+var swiper2 = new Swiper(".galeri-thumbs", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
 });
